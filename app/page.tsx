@@ -17,10 +17,6 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mb-12">
-        <CountdownTimer targetDate={tripStartDate} />
-      </div>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card className="border-forest/20 shadow-md">
           <CardHeader className="bg-forest/10 rounded-t-lg">
