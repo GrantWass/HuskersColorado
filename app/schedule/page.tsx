@@ -77,7 +77,7 @@ export default function SchedulePage() {
   return (
     <div className="container mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold mb-4 text-forest">Trip Schedule</h1>
-      <p className="text-xl mb-8 text-black">Please note that this is a tentative schedule and subject to change.</p>
+      <p className="text-xl mb-8 text-black">Please note that this is a tentative schedule and subject to change. </p>
 
       <Tabs defaultValue="day1" className="w-full">
         <TabsList className="grid grid-cols-2 md:grid-cols-5 mb-8 bg-forest/10">
