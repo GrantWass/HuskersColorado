@@ -80,17 +80,21 @@ export default function SchedulePage() {
       <p className="text-xl mb-8 text-black">Please note that this is a tentative schedule and subject to change. </p>
 
       <Tabs defaultValue="day1" className="w-full">
-        <TabsList className="grid grid-cols-2 md:grid-cols-5 mb-8 bg-forest/10">
-          {days.map((day) => (
-            <TabsTrigger
-              key={day.id}
-              value={day.id}
-              className="data-[state=active]:bg-husker data-[state=active]:text-white"
-            >
-              {day.title.split(" - ")[0]}
-            </TabsTrigger>
-          ))}
-        </TabsList>
+        <div className="relative">
+          <div className="overflow-x-auto pb-2">
+            <TabsList className="inline-flex h-10 items-center justify-center rounded-md bg-forest/10 p-1 text-forest min-w-full md:min-w-0 md:grid md:grid-cols-5">
+              {days.map((day) => (
+                <TabsTrigger
+                  key={day.id}
+                  value={day.id}
+                  className="data-[state=active]:bg-husker data-[state=active]:text-white whitespace-nowrap"
+                >
+                  {day.title.split(" - ")[0]}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+          </div>
+        </div>
 
         {days.map((day) => (
           <TabsContent key={day.id} value={day.id}>

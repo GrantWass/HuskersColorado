@@ -38,7 +38,7 @@ export default function PackingPage() {
     },
     {
       id: "gear",
-      title: "Gear & Equipment",
+      title: "Gear",
       items: [
         { name: "Daypack/Backpack", description: "For hiking and day trips" },
         { name: "Water Bottle/Hydration System", description: "Stay hydrated at altitude" },
@@ -110,17 +110,21 @@ export default function PackingPage() {
       </div>
 
       <Tabs defaultValue="essentials" className="w-full">
-        <TabsList className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-8 bg-forest/10">
-          {packingCategories.map((category) => (
-            <TabsTrigger
-              key={category.id}
-              value={category.id}
-              className="data-[state=active]:bg-husker data-[state=active]:text-white"
-            >
-              {category.title}
-            </TabsTrigger>
-          ))}
-        </TabsList>
+        <div className="relative">
+          <div className="overflow-x-auto pb-2">
+            <TabsList className="inline-flex h-10 items-center justify-center rounded-md bg-forest/10 p-1 text-forest min-w-full md:min-w-0 md:grid md:grid-cols-3 lg:grid-cols-5">
+              {packingCategories.map((category) => (
+                <TabsTrigger
+                  key={category.id}
+                  value={category.id}
+                  className="data-[state=active]:bg-husker data-[state=active]:text-white whitespace-nowrap"
+                >
+                  {category.title}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+          </div>
+        </div>
 
         {packingCategories.map((category) => (
           <TabsContent key={category.id} value={category.id}>
