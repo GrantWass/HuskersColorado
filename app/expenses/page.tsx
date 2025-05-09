@@ -16,34 +16,34 @@ interface PersonalExpense {
   amount: number
 }
 
-const peopleGoing = 20
+const peopleGoing = 22
 
 export default function ExpensesPage() {
   const sharedExpenses: SharedExpense[] = [
     {
       id: "1",
       description: "Mens AirBnb Deposit",
-      total: 1400,
-      perPerson: 1400 / peopleGoing,
+      total: 1325,
+      perPerson: 1325 / peopleGoing,
     },
     {
       id: "2",
       description: "Womens AirBnb Deposit",
-      total: 1400,
-      perPerson: 1400 / peopleGoing,
+      total: 1725,
+      perPerson: 1725 / peopleGoing,
     },
     {
       id: "3",
-      description: "Gasoline (Estimated)",
-      total: 180,
-      perPerson: 180 / 4,
+      description: "Gasoline (paid to driver)",
+      total: 160,
+      perPerson: 160 / 4,
     },
   ]
 
   const personalExpenses: PersonalExpense[] = [
     {
       id: "1",
-      description: "Food",
+      description: "Food (most meals will be provided)",
       amount: 30,
     },
     {
@@ -77,6 +77,9 @@ export default function ExpensesPage() {
             <div>
               <h2 className="text-2xl font-bold text-forest">Shared Expenses</h2>
               <p className="text-muted-foreground">Total: ${calculateTotalSharedExpenses().toFixed(2)}</p>
+              <p className="text-muted-foreground">Total Airbnb cost paid to Grant (Estimated): ${(sharedExpenses[0].perPerson + sharedExpenses[1].perPerson).toFixed(2)}</p>
+              <p className="text-muted-foreground">Initial deposit of $100 until final attendees are confirmed</p>
+              <p className="text-muted-foreground">Venmo: @GrantWasserman21</p>
             </div>
           </div>
 
@@ -86,7 +89,7 @@ export default function ExpensesPage() {
                 <TableRow>
                   <TableHead className="text-forest">Description</TableHead>
                   <TableHead className="text-right text-forest">Total</TableHead>
-                  <TableHead className="text-right text-forest">Per Person</TableHead>
+                  <TableHead className="text-right text-forest">Per Person (Estimated)</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>

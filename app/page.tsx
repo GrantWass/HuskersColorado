@@ -71,7 +71,7 @@ export default function Home() {
             <CardDescription>Track and split trip costs</CardDescription>
           </CardHeader>
           <CardContent className="pt-6">
-            <p>Keep track of all trip expenses, see who paid for what, and calculate how much each person owes.</p>
+            <p>Keep track of all trip expenses, see who pays for what, and calculate how much each person owes.</p>
           </CardContent>
           <CardFooter>
             <Button asChild className="w-full bg-husker hover:bg-husker/90">
@@ -80,7 +80,7 @@ export default function Home() {
           </CardFooter>
         </Card>
 
-        <Card className="border-forest/20 shadow-md">
+        {/* <Card className="border-forest/20 shadow-md">
           <CardHeader className="bg-forest/10 rounded-t-lg">
             <CardTitle className="text-black">Packing List</CardTitle>
             <CardDescription>What to bring and what to leave behind</CardDescription>
@@ -96,7 +96,7 @@ export default function Home() {
               <Link href="/packing">View Packing List</Link>
             </Button>
           </CardFooter>
-        </Card>
+        </Card> */}
       </div>
     </div>
   )

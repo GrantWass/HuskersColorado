@@ -15,7 +15,7 @@ export default function Navbar() {
     { href: "/housing", label: "Housing" },
     { href: "/schedule", label: "Schedule" },
     { href: "/expenses", label: "Expenses" },
-    { href: "/packing", label: "Packing" },
+    // { href: "/packing", label: "Packing" },
   ]
 
   return (

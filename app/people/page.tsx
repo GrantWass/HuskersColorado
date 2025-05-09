@@ -22,7 +22,28 @@ export default function PeoplePage() {
     { id: "6", name: "Ali Bainbridge", isGoing: true, hasPaid: false },
     { id: "4", name: "Cami Merickel", isGoing: true, hasPaid: false },
     { id: "5", name: "Berlyn Schutz", isGoing: true, hasPaid: false },
-
+    { id: "7", name: "Tommy Rice", isGoing: false, hasPaid: false },
+    { id: "8", name: "Riley Boonstra", isGoing: false, hasPaid: false },
+    { id: "9", name: "Max Myers", isGoing: false, hasPaid: false },
+    { id: "10", name: "Dennis Chapman", isGoing: false, hasPaid: false },
+    { id: "11", name: "Rico Leijenaar", isGoing: false, hasPaid: false },
+    { id: "12", name: "Jack Witte", isGoing: false, hasPaid: false },
+    { id: "13", name: "Hannes Fahl", isGoing: false, hasPaid: false },
+    { id: "14", name: "Gabe Nash", isGoing: false, hasPaid: false },
+    { id: "15", name: "Kaleb Sharp", isGoing: false, hasPaid: false },
+    { id: "16", name: "Alea Hardie", isGoing: false, hasPaid: false },
+    { id: "17", name: "Elli Dahl", isGoing: false, hasPaid: false },
+    { id: "18", name: "Jackie Abanses", isGoing: false, hasPaid: false },
+    { id: "19", name: "Hannah Godwin", isGoing: false, hasPaid: false },
+    { id: "20", name: "Luci Medina", isGoing: false, hasPaid: false },
+    { id: "21", name: "Jordan Metzler", isGoing: false, hasPaid: false },
+    { id: "22", name: "Taya Fettig", isGoing: false, hasPaid: false },
+    { id: "23", name: "Claire Helmers", isGoing: false, hasPaid: false },
+    { id: "24", name: "Jordyn Brown", isGoing: false, hasPaid: false },
+    { id: "25", name: "Kendall Zavala", isGoing: false, hasPaid: false },
+    { id: "26", name: "Kate Ebmeier", isGoing: false, hasPaid: false },
+    { id: "27", name: "Sydney Drevlow", isGoing: false, hasPaid: false },
+    { id: "28", name: "Erin Moore", isGoing: false, hasPaid: false },
   ])
 
   return (
@@ -35,7 +56,7 @@ export default function PeoplePage() {
             <TableRow>
               <TableHead className="text-forest">Name</TableHead>
               <TableHead className="text-forest">Going?</TableHead>
-              <TableHead className="text-forest">Paid?</TableHead>
+              <TableHead className="text-forest">Paid In Full?</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
