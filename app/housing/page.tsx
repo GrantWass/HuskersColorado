@@ -18,6 +18,8 @@ export default function HousingPage() {
             <div className="aspect-video relative rounded-md overflow-hidden">
               <Image src="/girls.png" alt="Girls' Airbnb" fill className="object-cover" />
             </div>
+            <p>1630 Dorchester Place
+            Colorado Springs, CO 80905</p>
             <p>This spacious Airbnb listing in Colorado offers a large house with 9 bedrooms and 3 bathrooms, ideal for accommodating our large group of women. It features two kitchens and dining rooms, providing enough space for cooking and dining as a team. The property is well-suited for larger groups with plenty of room to relax and socialize. The large and fairly private backyard contains a hot tub with views of the front range of the Rocky Mountains.</p>
             <Button asChild className="bg-husker hover:bg-husker/90">
               <a href="https://www.airbnb.com/rooms/6436111?adults=8&check_in=2025-08-13&check_out=2025-08-17&guests=10&location=Colorado&search_mode=regular_search&source_impression_id=p3_1746744293_P3rFcNh3tguHZ-8L&previous_page_section_name=1001&federated_search_id=52b3ed8b-11b2-46bd-b63b-5ba621067cad" target="_blank" rel="noopener noreferrer">
@@ -37,6 +39,7 @@ export default function HousingPage() {
             <div className="aspect-video relative rounded-md overflow-hidden">
               <Image src="/boys.png" alt="Guys' Airbnb" fill className="object-cover" />
             </div>
+            <p>1420 Ivy Place, Colorado Springs, CO 80905, United States</p>
             <p>This modern retreat in Colorado Springs offers 5 beds and 3 baths. Not quite as spacious as the girls' Airbnb, but enough for our group of men. The backyard, while not as large, boasts quite the aesthetic with a hot tub and a cornhole set. It is within walking distance to the girls' Airbnb (0.2 miles) and offers enough parking for our cars.</p>
             <Button asChild className="bg-husker hover:bg-husker/90">
               <a href="https://www.airbnb.com/rooms/1192083723104369868?adults=8&check_in=2025-08-13&check_out=2025-08-17&guests=10&location=Colorado&search_mode=regular_search&source_impression_id=p3_1746744291_P3rOwD7ThT8yNU6j&previous_page_section_name=1001&federated_search_id=52b3ed8b-11b2-46bd-b63b-5ba621067cad" target="_blank" rel="noopener noreferrer">
