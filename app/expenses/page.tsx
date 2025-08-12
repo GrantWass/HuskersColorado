@@ -16,7 +16,7 @@ interface PersonalExpense {
   amount: number
 }
 
-const peopleGoing = 22
+const peopleGoing = 23
 
 export default function ExpensesPage() {
   const sharedExpenses: SharedExpense[] = [
