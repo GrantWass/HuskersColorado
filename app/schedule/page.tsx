@@ -8,7 +8,7 @@ export default function SchedulePage() {
       title: "Day 1 - Arrival",
       date: "August 13, 2025",
       activities: [
-        { time: "9:00 AM", description: "Departure from Lincoln" },
+        { time: "9:00 AM", description: "Departure from Lincoln (2204 Surfside Dr)" },
         { time: "4:30 PM", description: "Check-in to Airbnbs" },
         { time: "5:00 PM", description: "Afternoon Run (if applicable)" },
         { time: "6:00 PM", description: "Group Dinner at House" },
